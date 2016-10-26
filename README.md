@@ -1,4 +1,4 @@
-# music
+ï»¿# music
 music player
 
-##[Ô¤ÀÀµØÖ·](http://http://tangfei.applinzi.com/music/music.html)
+##[é¢„è§ˆåœ°å€](http://tangfei.applinzi.com/music/music.html)
