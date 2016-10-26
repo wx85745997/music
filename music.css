@@ -1,0 +1,377 @@
+/*
+*公共样式
+*/
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear-fix::before {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*
+*字体样式
+*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('http://at.alicdn.com/t/font_1477066485_235433.eot'); /* IE9*/
+    src: url('http://at.alicdn.com/t/font_1477066485_235433.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'), /* chrome,firefox */ url('http://at.alicdn.com/t/font_1477066485_235433.ttf') format('truetype'), /* chrome,firefox,opera,Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1477066485_235433.svg#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('http://at.alicdn.com/t/font_1477066485_235433.eot')\0
+; /* ie8 fix */
+
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #31C37C;
+}
+
+.icon-next:before {
+    content: "\e601";
+}
+
+.icon-meun:before {
+    content: "\e609";
+    color: white;
+}
+
+.icon-suijibofang {
+    color: #31c37c;
+}
+
+.icon-suijibofang .active {
+    color: #31C37C;
+}
+
+.icon-i:before {
+    content: "\e608";
+    color: white;
+}
+
+.icon-jingyin::before {
+    content: "\e605";
+}
+
+.icon-music {
+    font-size: 80px;
+    color: #31C37C;
+    display: inline-block;
+    -webkit-animation: iconRotate 5s infinite linear;
+    animation: iconRotate 5s infinite linear;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+
+}
+
+.icon-music.active {
+    color: #55d295;
+}
+
+.rotateplay {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.rotatepaused {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes iconRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes iconRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.icon-1:before {
+    content: "\e606";
+}
+
+.icon-yinliang:before {
+    content: "\e607";
+}
+
+.icon-bofang:before {
+    content: "\e60e";
+}
+
+.icon-zanting:before {
+    content: "\e60d";
+}
+
+.icon-pre:before {
+    content: "\e60f";
+}
+
+/*
+*音乐的icon
+*/
+.music-icon {
+    position: relative;
+    left: 30%;
+    top: 300px;
+}
+
+/*
+*音乐模块主体
+*/
+.music-main {
+    box-shadow: 1px 1px 10px 1px;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+}
+
+.music-main.active {
+    width: 320px;
+    height: 400px;
+}
+
+.cover {
+    background: url(./babymetal.jpg) 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/*
+*音乐模块头部
+*/
+.music-header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #31C37C;
+}
+
+.music-header-left {
+    float: left;
+    padding-left: 10px;
+}
+
+.music-header-left .music-channel {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background: rgba(255, 255, 255, .7);
+    z-index: 99;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.music-header-left .music-channel > li {
+    display: block;
+    cursor: pointer
+}
+
+.music-header-left .music-channel > li:hover {
+    background: #31C37C;
+}
+
+.music-header-left:hover .music-channel {
+    left: 0;
+}
+
+.music-header-right {
+    float: right;
+    position: relative;
+    left: 110px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.music-header-right:hover {
+    left: 0px;
+}
+
+.music-header-right > a > span {
+    padding-left: 10px;
+    color: white;
+}
+
+/*
+*音乐模块中间部分
+*/
+.music-body {
+    text-align: center;
+}
+
+.music-body h2 {
+    white-space: nowrap;
+}
+
+.music-body .music-lyric {
+    overflow: hidden;
+}
+
+.music-body .music-lyric > ol {
+    position: relative;
+    top: 0;
+    font-size: 14px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    line-height: 2;
+}
+
+.music-body .music-lyric > ol > li {
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
+
+.music-body .music-lyric > ol .active {
+    color: red;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.music-body > ul > li {
+    display: inline-block;
+}
+
+.music-body > ul > li > a > i {
+    font-size: 50px;
+}
+
+.music-body .icon-bofang {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.music-body .icon-zanting {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*
+*音乐模块底部
+*/
+.music-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    background-color: #2D2E30;
+}
+
+.music-footer-left {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.music-footer .music-progress-out {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: #67686A;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.music-footer .nowtime {
+    position: absolute;
+    top: -20px;
+    color: #31c37c
+}
+
+.music-footer .endtime {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    color: #31c37c
+}
+
+.music-footer .music-progress-inner {
+    position: relative;
+    width: 0%;
+    height: 10px;
+    background-color: #31C37C;
+    z-index: 1;
+    border-radius: 10px 0 0 10px;
+}
+
+.music-footer-right {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.music-footer-right:hover .volume-progress-out {
+    display: block;
+}
+
+.music-footer-right .volume-progress-out {
+    border: 5px solid #2D2E30;
+    position: absolute;
+    top: -110px;
+    right: 0px;
+    width: 10px;
+    height: 100px;
+    background: white;
+    border-radius: 5px;
+    display: none;
+    transform: rotateX(180deg);
+    cursor: pointer
+}
+
+.music-footer-right .volume-progress-inner {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: #31c37c;
+    left: 0%;
+    top: 0;
+}

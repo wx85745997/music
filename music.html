@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" meta name="referrer" content="never">
+    <title>音乐播放器</title>
+</head>
+<script src="./jquery.min.js"></script>
+<script src="./draggabilly.js"></script>
+
+<link href="./music.css" rel="stylesheet" type="text/css"/>
+<body>
+
+
+<div class="music-icon"><a href="javascript:void(0)"><i class="iconfont icon-music active">&#xe600;</i></a>
+    <div class="music-main active">
+        <div class="cover"></div>
+        <div class="music-header clear-fix">
+            <div class="music-header-left">
+                <a href="javascript:void(0)"> <i class="iconfont icon-meun"></i></a>
+                <div class="music-channel"></div>
+            </div>
+            <div class="music-header-right"><a href="javascript:void(0)"><i class="iconfont icon-i"></i><span>作者:菲龍探雲</span></a></div>
+        </div>
+        <div class="music-body">
+            <h2>歌名</h2>
+            <ul>
+                <li><a href="javascript:void(0)"><i class="iconfont icon-pre"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="iconfont icon-bofang"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="iconfont icon-next"></i></a></li>
+            </ul>
+            <div class="music-lyric">
+
+            </div>
+        </div>
+        <div class="music-footer">
+            <div class="music-footer-left"><a href="javascript:void(0)"><i class="iconfont icon-suijibofang">&#xe602;</i></a></div>
+            <div class="music-progress"></div>
+            <div class="music-progress-out">
+                <span class="nowtime">0:00</span> <span class="endtime">0:00</span>
+                <div class="music-progress-inner"></div>
+            </div>
+            <div class="music-footer-right">
+                <a href="javascript:void(0)"><i class="iconfont icon-yinliang"></i></a>
+                <div class="volume-progress-out">
+                    <div class="volume-progress-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src=""></audio>
+</div>
+
+<script src="./music.js"></script>
+<script>
+    //拖拽插件
+    var $draggable = $(".music-icon").draggabilly({
+        // options...
+    });
+
+
+</script>
+
+
+</body>
+</html>
+
